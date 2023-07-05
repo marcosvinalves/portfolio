@@ -1,0 +1,102 @@
+.second-col {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-pic {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../img/insta-pic-removebg-preview.png);
+  height: 550px;
+  width: 300px;
+  background-repeat: no-repeat;
+}
+
+.homepage-section {
+  padding-top: 9.4rem;
+  min-height: 100vh;
+}
+
+.hero-row {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+.dash {
+  background-color: #e4aa48;
+  height: 2px;
+  width: 40px;
+}
+
+.col-1-job {
+  display: none;
+}
+
+.hero-link {
+  border: none;
+  font-size: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hero-link:hover {
+  border: none;
+  color: #e4aa48;
+}
+
+.portfolio-button {
+  background-color: transparent;
+}
+
+.portfolio-button:hover {
+  background-color: #e4aa48;
+}
+
+@media (max-width: 991px) {
+  .third-col {
+    display: none !important;
+  }
+
+  .col-1-job {
+    display: block !important;
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #e4aa48;
+  }
+}
+
+@media (max-width: 548px) {
+  .homepage-section,
+  .about-section,
+  .skills-section,
+  .projects-section {
+    height: fit-content;
+  }
+
+  .main-container {
+    scroll-snap-type:none;
+}
+
+.container {
+    scroll-snap-align: none;
+}
+}
+
+@media (max-width: 450px) {
+  .row {
+    display: block;
+  }
+
+  .second-col {
+    margin-top: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .col-1-job {
+    width: 240px;
+  }
+}

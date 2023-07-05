@@ -1,0 +1,108 @@
+.navbar-section {
+    justify-content: space-between;
+}
+
+.navbar {
+    --bs-navbar-color: none;
+    --bs-navbar-brand-color: none;
+} 
+
+.navbar-collapse {
+    flex-grow: 0;
+    gap: 1.2rem;
+}
+
+.nav-link {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #DADADA;
+    
+    border-bottom: 2px solid #E4AA48;
+}
+
+.navbar-brand {
+    margin-right: 0;
+    padding-right: 0;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navbar-brand:hover {
+    color: #DADADA;
+}
+
+.navbar-brand:focus,
+.navbar-brand:active {
+    border-bottom: none!important
+}
+
+.nav-link:focus,
+.nav-link:active {
+    color: #DADADA;
+}
+
+.icons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+
+    font-size: 1.2rem;
+}
+
+.nav-icon {
+    border: none;
+}
+
+.nav-icon:hover {
+    border: none;
+    color: #E4AA48;
+}
+
+.btn-primary {
+    --bs-btn-active-bg: none;
+    --bs-btn-active-border-color: none;
+}
+
+.contact-button {
+    border-radius: 0;
+    border: 1px solid #E4AA48;
+    color: #E4AA48;
+    background: transparent;
+    
+}
+
+.contact-button:hover {
+    border: 1px solid #E4AA48;
+    background: #E4AA48;
+    color: #2E2E35;
+}
+
+
+.navbar-collapse.show .contact-button {
+    margin-top: 0.8rem;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-custom {
+    fill: #DADADA;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+.navbar-toggler-custom:hover {
+   fill: #E4AA48;
+}

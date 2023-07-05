@@ -1,0 +1,22 @@
+import { Container } from "react-bootstrap";
+import "./Projects.css";
+
+export const Projects = () => {
+  return (
+    <div className="container-fluid"  style={{ backgroundColor: "#32323a" }}>
+      <Container className="projects-section">
+        <h1
+          style={{
+            fontSize: "3.6rem",
+            fontWeight: "bold",
+            color: "#dadada",
+            marginBottom: "31px",
+          }}
+        >
+          Projects <span style={{ color: "#E4AA48" }}>.</span>
+        </h1>
+        <div className="dash"></div>
+      </Container>
+    </div>
+  );
+};

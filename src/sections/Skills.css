@@ -1,0 +1,59 @@
+.skills-section {
+  padding: 3.6rem 0 3.6rem 0;
+  min-height: 100vh;
+}
+
+.skills-container {
+  padding-top: 3.6rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.progress {
+  --bs-progress-bar-bg: #e4aa48;
+}
+
+.tec-progress {
+  width: 70%;
+}
+
+.bar-container {
+  flex-basis: 100%;
+}
+
+.know-container {
+  align-items: center;
+}
+
+.knowledge-title {
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+.cert-container {
+  padding-top: 3.6rem;
+  grid-column: span 2;
+}
+
+@media (max-width: 586px) {
+    .tec-container {
+        align-self: center;
+        justify-self: center;
+        width: 70%;
+    }
+
+    .tec-progress {
+        width: 100%;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .know-container {
+        grid-row: 2;
+        padding-top: 3.2rem;
+    }
+}

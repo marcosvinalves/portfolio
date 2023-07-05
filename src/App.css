@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'UbuntuBold';
+    src: url(./fonts/Ubuntu/Ubuntu-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'UbuntuRegular';
+    src: url(./fonts/Ubuntu/Ubuntu-Regular.ttf);
+}
+@font-face {
+    font-family: 'UbuntuMedium';
+    src: url(./fonts/Ubuntu/Ubuntu-Medium.ttf);
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'UbuntuRegular';
+    font-size: 67.25%;
+    line-height: 1.2;
+    color: #DADADA;
+    background-color: #2E2E35;
+}
