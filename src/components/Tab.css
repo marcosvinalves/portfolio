@@ -1,0 +1,15 @@
+.tab-container {
+    margin-top: 3.6rem;
+}
+
+.nav {
+    --bs-nav-link-color: #e4aa48;
+}
+
+.nav-pills .nav-link {
+    border-radius: 0;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #e4aa48;
+}

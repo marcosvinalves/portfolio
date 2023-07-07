@@ -1,0 +1,21 @@
+.card {
+    border-radius: 0;
+    --bs-card-border-color: #e4aa48;
+    background-color: #2e2e35;
+}
+
+.card-img, .card-img-top {
+    --bs-card-border-color: #e4aa48;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.card-title {
+    color: #dadada;
+    text-align: center;
+    font-weight: bold;
+}
+
+.card-desc {
+    color: #dadada;
+}

@@ -96,6 +96,13 @@ export const Skills = () => {
       company: "Udemy",
       companyLogo:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMqQ9UysvxOleGCjjaqkJgGH0Xrcjizi7OyklH4rz0P6EWQkBV7on769TnGkaOyxAgDPo&usqp=CAU"
+    },
+    {
+      name: "Inteligência Artificial Fundamentos 2.0",
+      certImg: "https://drive.google.com/file/d/1SJknccAr8LJqH-P7xzmD9GqHMt4eXteR/view",
+      company: "Data Science Academy",
+      companyLogo:
+        "https://lwfiles000.mycourse.app/datascienceacademy-public/f5904fbd21fa7766fafbe89d9d428121.png"
     }
   ];
 

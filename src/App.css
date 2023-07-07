@@ -12,6 +12,14 @@
     src: url(./fonts/Ubuntu/Ubuntu-Medium.ttf);
 }
 
+*:focus-visible {
+    color: inherit!important;
+    border: 1px solid #e4aa48!important;
+    background-color:inherit!important;
+    box-shadow: 0 0 0 0.25rem #fcbd50!important;
+
+}
+
 html {
     overflow-x: hidden;
 }

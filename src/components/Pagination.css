@@ -1,0 +1,18 @@
+.pagination {
+    margin-top: 1.6rem;
+    width: 100%;
+    justify-content: end;
+    --bs-pagination-border-radius: 0;
+    --bs-pagination-color: #e4aa48;
+    --bs-pagination-bg: transparent;
+    --bs-pagination-disabled-bg: #32323aab;
+    --bs-pagination-disabled-border-color: #e4ab485e;
+    --bs-pagination-active-bg: #e4aa48;
+    --bs-pagination-active-border-color: #e4aa48;
+    --bs-pagination-disabled-color: #e4ab485e;
+    --bs-pagination-active-color: #32323a;
+    --bs-pagination-border-color: #e4aa48;
+    --bs-pagination-hover-color: #32323a;
+    --bs-pagination-hover-bg: #e4aa48;
+    --bs-pagination-hover-border-color: #e4aa48;
+}

@@ -1,5 +1,6 @@
 import { Container } from "react-bootstrap";
 import "./Projects.css";
+import { Tab } from "../components/Tab";
 
 export const Projects = () => {
   return (
@@ -16,6 +17,7 @@ export const Projects = () => {
           Projects <span style={{ color: "#E4AA48" }}>.</span>
         </h1>
         <div className="dash"></div>
+        <Tab />
       </Container>
     </div>
   );
