@@ -1,6 +1,6 @@
 import { Container } from "react-bootstrap";
 import "../sections/About.css";
-import LinkedinPic from "../img/linkedin-pic2.jpg";
+import LinkedinPic from "../assets/linkedin-pic2.jpg";
 
 export const About = () => {
   return (

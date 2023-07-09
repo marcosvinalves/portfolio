@@ -1,0 +1,50 @@
+.modal-content {
+    background-color: #2E2E35;
+}
+
+.modal-header {
+    text-transform: uppercase;
+    color: #e4aa48;
+    border-bottom: none;
+    display: flex;
+}
+
+.modal-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+}
+
+.modal-title {
+    font-size: 1.6rem;
+    color: #e4aa48;
+    justify-self: center;
+}
+
+.modal-button {
+    justify-self: end!important;
+    cursor: pointer;
+}
+
+.modal-desc {
+    font-size: 1rem;
+}
+
+.modal-info {
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+
+@media (max-width: 992px) {
+    .modal-body {
+        grid-template-columns: 1fr;
+    }
+
+    .modal-img {
+        justify-self: center;
+    }
+
+    .modal-text {
+        grid-row: 2;
+    }
+}

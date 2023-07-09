@@ -1,6 +1,9 @@
 import { Container, Button, Row, Col } from "react-bootstrap";
+import { useState, useEffect } from "react";
 import ProgressBar from "react-bootstrap/ProgressBar";
+import { Pagination } from "../components/SkillsPagination"
 import "./Skills.css";
+import "../components/Pagination.css"
 
 export const Skills = () => {
   const tecnologies = [
@@ -105,6 +108,98 @@ export const Skills = () => {
         "https://lwfiles000.mycourse.app/datascienceacademy-public/f5904fbd21fa7766fafbe89d9d428121.png"
     }
   ];
+
+  const [currentPage, setCurrentPage] = useState(1);
+  const [certsPerPage, setCertsPerPage] = useState(4);
+
+  const renderCertifications = () => {
+    return currentCerts.map((certification) => (
+      <Col style={{marginBottom: "1.2rem"}}>
+                <div className="d-flex gap-3">
+                  <div className="d-flex justify-content-center align-items-center">
+                    <img
+                      width="40px"
+                      height="40px"
+                      alt={`${certification.company} logo`}
+                      src={certification.companyLogo}
+                      />
+                  </div>
+                  <div
+                    style={{
+                      borderLeft: "1px solid #e4aa48",
+                      paddingLeft: "1.2rem",
+                    }}
+                    >
+                    <p
+                      style={{
+                        textTransform: "uppercase",
+                        fontWeight: "bold",
+                        fontSize: "1rem",
+                      }}
+                      >
+                      {certification.name}{" "}
+                      <span
+                        style={{
+                          fontSize: "0.8rem",
+                          fontWeight: "normal",
+                          fontStyle: "italic",
+                          textTransform: "capitalize",
+                        }}
+                        >
+                        &mdash; {certification.company}
+                      </span>
+                    </p>
+
+                    <Button
+                      target="blank"
+                      className="contact-button"
+                      href={certification.certImg}
+                    >
+                      Show certification
+                    </Button>
+                  </div>
+                </div>
+              </Col>
+    ));
+  };
+
+  // Calculate the number of pages
+  const pageCount = Math.ceil(certifications.length / certsPerPage);
+
+  const handlePageChange = (pageNumber) => {
+    setCurrentPage(pageNumber);
+  };
+
+  // Update the number of certifications per page based on screen width
+  useEffect(() => {
+    const updateCertsPerPage = () => {
+      if (window.innerWidth >= 1200) {
+        setCertsPerPage(4);
+      } else if (window.innerWidth >= 768) {
+        setCertsPerPage(4);
+      } else {
+        setCertsPerPage(4);
+      }
+    };
+
+    window.addEventListener('resize', updateCertsPerPage);
+
+    // Call the update function initially
+    updateCertsPerPage();
+
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener('resize', updateCertsPerPage);
+    };
+  }, []);
+
+  // Calculate the current page's certifications
+  const indexOfLastCert = currentPage * certsPerPage;
+  const indexOfFirstCert = indexOfLastCert - certsPerPage;
+  const currentCerts = certifications.slice(indexOfFirstCert, indexOfLastCert);
+
+  // Handle page change
+  
 
   return (
     <div className="container-fluid">
@@ -219,55 +314,9 @@ export const Skills = () => {
               Certifications
             </p>
           <Row lg={2} md={2} sm={1} xs={1} className="">
-            {certifications.map((certification) => (
-              <Col style={{marginBottom: "1.2rem"}}>
-                <div className="d-flex gap-3">
-                  <div className="d-flex justify-content-center align-items-center">
-                    <img
-                      width="40px"
-                      height="40px"
-                      alt={`${certification.company} logo`}
-                      src={certification.companyLogo}
-                      />
-                  </div>
-                  <div
-                    style={{
-                      borderLeft: "1px solid #e4aa48",
-                      paddingLeft: "1.2rem",
-                    }}
-                    >
-                    <p
-                      style={{
-                        textTransform: "uppercase",
-                        fontWeight: "bold",
-                        fontSize: "1rem",
-                      }}
-                      >
-                      {certification.name}{" "}
-                      <span
-                        style={{
-                          fontSize: "0.8rem",
-                          fontWeight: "normal",
-                          fontStyle: "italic",
-                          textTransform: "capitalize",
-                        }}
-                        >
-                        &mdash; {certification.company}
-                      </span>
-                    </p>
-
-                    <Button
-                      target="blank"
-                      className="contact-button"
-                      href={certification.certImg}
-                    >
-                      Show certification
-                    </Button>
-                  </div>
-                </div>
-              </Col>
-            ))}
+              {renderCertifications()}
           </Row>
+          <Pagination pageCount={pageCount} currentPage={currentPage} handlePageChange={handlePageChange} />
         </div>
           </div>
       </Container>

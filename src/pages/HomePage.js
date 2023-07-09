@@ -5,7 +5,7 @@ import { Button } from "react-bootstrap";
 
 export const HomePage = () => {
   return (
-    <div className="homepage-section d-flex justify-content-center align-items-center">
+    <div className="homepage-section justify-content-center align-items-center">
       <Row>
         <Col
           className="first-col
