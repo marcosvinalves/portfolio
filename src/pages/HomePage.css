@@ -75,13 +75,17 @@
     height: fit-content;
   }
 
-  .main-container {
-    scroll-snap-type:none;
-}
+  .homepage-section {
+    padding-top: 3.6rem;
+  }
 
-.container {
+  .main-container {
+    scroll-snap-type: none;
+  }
+
+  .container {
     scroll-snap-align: none;
-}
+  }
 }
 
 @media (max-width: 450px) {
