@@ -5,6 +5,7 @@ import { HomePage } from "./pages/HomePage";
 import { About } from "./sections/about"
 import { Skills } from "./sections/Skills";
 import { Projects } from "./sections/Projects";
+import {Contact} from "./sections/Contact"
 import { Container } from "react-bootstrap";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <About />
         <Skills />
         <Projects />
+        <Contact />
       </div>
     </BrowserRouter>
   );

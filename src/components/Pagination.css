@@ -2,7 +2,7 @@
     margin-top: 1.6rem;
     width: 100%;
     justify-content: end;
-    --bs-pagination-border-radius: 0;
+    --bs-pagination-border-radius: 10px;
     --bs-pagination-color: #e4aa48;
     --bs-pagination-bg: transparent;
     --bs-pagination-disabled-bg: #32323aab;

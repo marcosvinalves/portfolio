@@ -87,7 +87,7 @@ export const Tab = () => {
         "A simple shop page, where you can add some items to the cart and save your cart to browser local storage.",
       cardImg: images.shoppingCart,
       codeUrl: "https://github.com/marcosvinalves/shopping-cart",
-      demoUrl: "https://shopping-cart-two-ivory.vercel.app/store",
+      demoUrl: "https://shopping-cart-two-ivory.vercel.app",
       tecsUsed: [images.typescript, images.react, images.bootstrap],
     },
   ]);

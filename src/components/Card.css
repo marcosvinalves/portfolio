@@ -1,13 +1,12 @@
 .card {
-    border-radius: 0;
+    border-radius: 10px;
     --bs-card-border-color: #e4aa48;
     background-color: #2e2e35;
 }
 
 .card-img, .card-img-top {
-    --bs-card-border-color: #e4aa48;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .card-title {

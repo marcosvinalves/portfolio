@@ -7,7 +7,7 @@
 }
 
 .nav-pills .nav-link {
-    border-radius: 0;
+    border-radius: 10px;
 }
 
 .nav-pills .nav-link.active {
