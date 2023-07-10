@@ -48,6 +48,7 @@ export const Contact = () => {
             fontWeight: "bold",
             fontSize: "1rem",
             marginTop: "3.6rem",
+            alignSelf: "flex-start"
           }}
         >
           Message me
