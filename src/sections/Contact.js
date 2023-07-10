@@ -40,7 +40,7 @@ export const Contact = () => {
         Contact <span style={{ color: "#E4AA48" }}>.</span>
       </h1>
       <div className="dash"></div>
-      <div className="d-flex flex-column">
+      <div className="d-flex flex-column justify-content-center align-items-center">
         <p
           style={{
             color: "#e4aa48",
