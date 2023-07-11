@@ -8,20 +8,20 @@ export const Alert = ({ fecharAlerta }) => {
   const [progresso, setProgresso] = useState(100);
   const [backgroundColor, setBackgroundColor] = useState("#39a2db");
 
-  // useEffect(() => {
-  //   const timer = setTimeout(() => {
-  //     fecharAlerta();
-  //   }, 5000);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      fecharAlerta();
+    }, 5000);
 
-  //   const interval = setInterval(() => {
-  //     setProgresso((prevProgresso) => prevProgresso - 20);
-  //   }, 1000);
+    const interval = setInterval(() => {
+      setProgresso((prevProgresso) => prevProgresso - 20);
+    }, 1000);
 
-  //   return () => {
-  //     clearTimeout(timer);
-  //     clearInterval(interval);
-  //   };
-  // }, [fecharAlerta]);
+    return () => {
+      clearTimeout(timer);
+      clearInterval(interval);
+    };
+  }, [fecharAlerta]);
 
   useEffect(() => {
     if (progresso <= 60) {
