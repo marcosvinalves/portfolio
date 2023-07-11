@@ -8,20 +8,20 @@ export const Alert = ({ fecharAlerta }) => {
   const [progresso, setProgresso] = useState(100);
   const [backgroundColor, setBackgroundColor] = useState("#39a2db");
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      fecharAlerta();
-    }, 5000);
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     fecharAlerta();
+  //   }, 5000);
 
-    const interval = setInterval(() => {
-      setProgresso((prevProgresso) => prevProgresso - 20);
-    }, 1000);
+  //   const interval = setInterval(() => {
+  //     setProgresso((prevProgresso) => prevProgresso - 20);
+  //   }, 1000);
 
-    return () => {
-      clearTimeout(timer);
-      clearInterval(interval);
-    };
-  }, [fecharAlerta]);
+  //   return () => {
+  //     clearTimeout(timer);
+  //     clearInterval(interval);
+  //   };
+  // }, [fecharAlerta]);
 
   useEffect(() => {
     if (progresso <= 60) {
@@ -37,22 +37,19 @@ export const Alert = ({ fecharAlerta }) => {
   };
 
   return (
-    <div
-      className="alert-container"
-    >
+    <div className="alert-container">
       <ProgressBar className="a" now={progresso} />
       <AlertBS
         className="d-flex align-items-center justify-content-center"
         show={true}
         onClose={handleClose}
-        dismissible
       >
         <AlertBS.Heading style={{ marginRight: "18px", fontSize: "1.2rem" }}>
           <div className="d-flex align-items-center gap-3">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="25"
-              height="25"
+              width="20"
+              height="20"
               fill="#fff"
               className="bi bi-check-circle-fill"
               viewBox="0 0 16 16"
@@ -62,8 +59,17 @@ export const Alert = ({ fecharAlerta }) => {
             Message sent
           </div>
         </AlertBS.Heading>
-        <Button className="contact-button" onClick={handleClose}>
-          Close me
+        <Button variant="none" className="contact-button" onClick={handleClose}>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-x-lg"
+            viewBox="0 0 16 16"
+          >
+            <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+          </svg>
         </Button>
       </AlertBS>
     </div>
