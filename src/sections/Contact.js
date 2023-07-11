@@ -1,11 +1,12 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { Container } from "react-bootstrap";
 import "./Contact.css";
-import contactImg from "../assets/output-onlinepngtools.png";
+import { Alert } from "../components/Alert";
 
 export const Contact = () => {
   const form = useRef();
+  const [exibirAlerta, setExibirAlerta] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -20,11 +21,16 @@ export const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
+          setExibirAlerta(true); // Exibir o alerta após o envio bem-sucedido
         },
         (error) => {
           console.log(error.text);
         }
       );
+  };
+
+  const fecharAlerta = () => {
+    setExibirAlerta(false);
   };
 
   return (
@@ -48,7 +54,7 @@ export const Contact = () => {
             fontWeight: "bold",
             fontSize: "1rem",
             marginTop: "3.6rem",
-            alignSelf: "flex-start"
+            alignSelf: "flex-start",
           }}
         >
           Message me
@@ -84,6 +90,7 @@ export const Contact = () => {
                 type="submit"
                 value="Send"
               />
+              {exibirAlerta && <Alert fecharAlerta={fecharAlerta} />}
             </form>
           </div>
           <div className="contact-img"></div>
