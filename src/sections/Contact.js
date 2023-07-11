@@ -73,17 +73,18 @@ export const Contact = () => {
                 Fill out the form below and leave me a message.
               </p>
               <div className="input-forms">
-                <input type="text" name="user_name" placeholder="Your Name" />
+                <input type="text" name="user_name" placeholder="Your Name" required/>
               </div>
               <div className="input-forms">
                 <input
                   type="email"
                   name="user_email"
                   placeholder="Your Email"
+                  required
                 />
               </div>
               <div className="input-forms">
-                <textarea name="message" placeholder="Your message" />
+                <textarea name="message" placeholder="Your message" required/>
               </div>
               <input
                 className="btn contact-button"
