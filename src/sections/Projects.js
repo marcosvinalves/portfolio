@@ -4,7 +4,7 @@ import { Tab } from "../components/Tab";
 
 export const Projects = () => {
   return (
-    <div className="container-fluid"  style={{ backgroundColor: "#32323a" }}>
+    <div  id="projects" className="container-fluid"  style={{ backgroundColor: "#32323a" }}>
       <Container className="projects-section">
         <h1
           style={{

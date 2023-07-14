@@ -81,7 +81,7 @@ export const HomePage = () => {
               </svg>
             </Link>
           </div>
-          <Button className="contact-button">Hire Me</Button>
+          <Button href="#contact" className="contact-button">Hire Me</Button>
         </Col>
         <Col className="second-col d-flex">
           <div className="image-container">
@@ -110,7 +110,7 @@ export const HomePage = () => {
             Front-end Web Developer with a background in UI/UX Design.
             Passionate about web development and creating good user experiences
           </p>
-          <Button className="contact-button portfolio-button ">
+          <Button href="#projects" className="contact-button portfolio-button ">
             View Projects
           </Button>
         </Col>

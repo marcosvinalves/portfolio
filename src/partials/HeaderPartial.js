@@ -7,10 +7,11 @@ import Button from "react-bootstrap/Button";
 
 export const HeaderPartial = () => {
   return (
-    <Container>
+    <Container fluid className="fixed-top" style={{height:"58px", backgroundColor: "#2E2E35" }}>
       <Navbar
-        className="navbar-section"
-        style={{ color: "#dadada" }}
+        fixed="top"
+        className="container navbar-section"
+        style={{ color: "#dadada", backgroundColor: "#2E2E35" }}
         expand="lg"
       >
         <Link className="navbar-brand nav-link" to={"/"}>
@@ -37,15 +38,15 @@ export const HeaderPartial = () => {
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto m-auto">
-            <Link className="nav-link" to={"/projects"}>
+            <a className="nav-link" href="#projects">
               Projects
-            </Link>
-            <Link className="nav-link" to={"/skills"}>
+            </a>
+            <a className="nav-link" href="#skills">
               Skills
-            </Link>
-            <Link className="nav-link" to={"/about"}>
+            </a>
+            <a className="nav-link" href="#about">
               About
-            </Link>
+            </a>
           </Nav>
           <div className="icons-container">
             <Link
@@ -99,7 +100,9 @@ export const HeaderPartial = () => {
             </Link>
           </div>
           <div className="d-flex justify-content-center">
-            <Button className="contact-button">Hire Me</Button>
+            <Button href="#contact" className="contact-button">
+              Hire Me
+            </Button>
           </div>
         </Navbar.Collapse>
       </Navbar>

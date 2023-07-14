@@ -1,10 +1,12 @@
 .navbar-section {
     justify-content: space-between;
+    
 }
 
 .navbar {
     --bs-navbar-color: none;
     --bs-navbar-brand-color: none;
+    padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
 } 
 
 .navbar-collapse {
@@ -97,6 +99,7 @@
 
 .navbar-toggler {
     border: none;
+    padding: 0;
 }
 
 .navbar-toggler-custom {

@@ -12,8 +12,8 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App main-container">
-        <Container>
         <HeaderPartial/>
+        <Container>
         <HomePage />
         </Container>
         <About />

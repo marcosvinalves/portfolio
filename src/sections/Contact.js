@@ -34,7 +34,7 @@ export const Contact = () => {
   };
 
   return (
-    <Container className="contact-section">
+    <Container id="contact" className="contact-section">
       <h1
         style={{
           fontSize: "3.6rem",

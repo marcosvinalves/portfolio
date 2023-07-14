@@ -5,7 +5,7 @@ import LinkedinPic from "../assets/linkedin-pic2.jpg";
 export const About = () => {
   return (
     <div className="container-fluid" style={{ backgroundColor: "#32323a" }}>
-      <Container className="about-section">
+      <Container id="about" className="about-section">
         <h1
           style={{
             fontSize: "3.6rem",

@@ -106,6 +106,13 @@ export const Skills = () => {
       company: "Data Science Academy",
       companyLogo:
         "https://lwfiles000.mycourse.app/datascienceacademy-public/f5904fbd21fa7766fafbe89d9d428121.png"
+    },
+    {
+      name: "Fundamentos do design da experiência do usuário (UX)",
+      certImg: "https://www.coursera.org/account/accomplishments/verify/ZEG4VWSDWHNK",
+      company: "Google",
+      companyLogo:
+        "https://www.freepnglogos.com/uploads/google-logo-png/google-logo-icon-png-transparent-background-osteopathy-16.png"
     }
   ];
 
@@ -203,7 +210,7 @@ export const Skills = () => {
 
   return (
     <div className="container-fluid">
-      <Container className="skills-section">
+      <Container id="skills" className="skills-section">
         <h1
           style={{
             fontSize: "3.6rem",
