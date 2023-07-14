@@ -7,18 +7,22 @@ import Button from "react-bootstrap/Button";
 
 export const HeaderPartial = () => {
   return (
-    <Container fluid className="fixed-top" style={{height:"58px", backgroundColor: "#2E2E35" }}>
+    <Container
+      fluid
+      className="fixed-top"
+      style={{ height: "58px", backgroundColor: "#2E2E35" }}
+    >
       <Navbar
         fixed="top"
         className="container navbar-section"
         style={{ color: "#dadada", backgroundColor: "#2E2E35" }}
         expand="lg"
       >
-        <Link className="navbar-brand nav-link" to={"/"}>
+        <a className="navbar-brand nav-link" href="#home">
           <Navbar.Brand>
             MA <span style={{ color: "#E4AA48" }}>.</span>
           </Navbar.Brand>
-        </Link>
+        </a>
         <Navbar.Toggle
           aria-controls="basic-navbar-nav"
           className="navbar-toggler-custom"

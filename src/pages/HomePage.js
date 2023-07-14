@@ -5,11 +5,14 @@ import { Button } from "react-bootstrap";
 
 export const HomePage = () => {
   return (
-    <div className="homepage-section justify-content-center align-items-center">
+    <div
+      id="home"
+      className="homepage-section justify-content-center align-items-center"
+    >
       <Row>
         <Col
           className="first-col
-        "
+          "
         >
           <h1
             style={{
@@ -81,7 +84,9 @@ export const HomePage = () => {
               </svg>
             </Link>
           </div>
-          <Button href="#contact" className="contact-button">Hire Me</Button>
+          <Button href="#contact" className="contact-button">
+            Hire Me
+          </Button>
         </Col>
         <Col className="second-col d-flex">
           <div className="image-container">

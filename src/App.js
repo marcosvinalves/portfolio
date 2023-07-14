@@ -12,9 +12,9 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App main-container">
-        <HeaderPartial/>
         <Container>
-        <HomePage />
+        <HeaderPartial/>
+        <HomePage/>
         </Container>
         <About />
         <Skills />
