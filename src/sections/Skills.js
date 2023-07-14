@@ -115,6 +115,7 @@ export const Skills = () => {
         "https://www.freepnglogos.com/uploads/google-logo-png/google-logo-icon-png-transparent-background-osteopathy-16.png"
     }
   ];
+  
 
   const [currentPage, setCurrentPage] = useState(1);
   const [certsPerPage, setCertsPerPage] = useState(4);
