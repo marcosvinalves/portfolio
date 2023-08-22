@@ -113,8 +113,29 @@ export const Skills = () => {
       company: "Google",
       companyLogo:
         "https://www.freepnglogos.com/uploads/google-logo-png/google-logo-icon-png-transparent-background-osteopathy-16.png"
-    }
-  ];
+    },
+    {
+      name: "Iniciar o processo de design de UX: criar empatia, definir e idealizar",
+      certImg: "https://www.coursera.org/account/accomplishments/verify/PWBBUH46382S",
+      company: "Google",
+      companyLogo:
+        "https://www.freepnglogos.com/uploads/google-logo-png/google-logo-icon-png-transparent-background-osteopathy-16.png"
+    },
+    {
+      name: "Criar wireframes e protótipos de baixa fidelidade",
+      certImg: "https://www.coursera.org/account/accomplishments/verify/F6574G477K66",
+      company: "Google",
+      companyLogo:
+        "https://www.freepnglogos.com/uploads/google-logo-png/google-logo-icon-png-transparent-background-osteopathy-16.png"
+    },
+    {
+      name: "Fundamentos de FrontEnd Development",
+      certImg: "https://drive.google.com/file/d/1Hb3xTjpllDkj5mnuSZRfvJGTUT7YymD-/view?usp=drive_link",
+      company: "Descomplica",
+      companyLogo:
+        "https://play-lh.googleusercontent.com/UXXm0h5NzCCMscjscI4noqIUOok5pTQnCD-Uag9M83bAz1GYmMFVQUo-Rol-KUvnodk"
+    },
+    ];
   
 
   const [currentPage, setCurrentPage] = useState(1);
