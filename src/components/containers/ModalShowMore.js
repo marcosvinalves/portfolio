@@ -35,7 +35,7 @@ export function Modal({ show, onHide, card }) {
       </ModalBS.Header>
       <ModalBS.Body>
         <div className="modal-img d-flex align-items-center justify-content-center">
-          <img src={cardImg} width="300px" alt={`${name} showcase`} />
+          <img src={cardImg} width="300px" height="185px" alt={`${name} showcase`} />
         </div>
         <div className="modal-text">
           <p className="modal-desc">

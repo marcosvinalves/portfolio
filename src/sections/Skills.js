@@ -49,6 +49,11 @@ export const Skills = () => {
         "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
       progress: 35,
     },
+    {
+      name: "Figma",
+      imgUrl: "https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg",
+      progress: 60
+    }
   ];
 
   const knowledges = [
@@ -134,6 +139,20 @@ export const Skills = () => {
       company: "Descomplica",
       companyLogo:
         "https://play-lh.googleusercontent.com/UXXm0h5NzCCMscjscI4noqIUOok5pTQnCD-Uag9M83bAz1GYmMFVQUo-Rol-KUvnodk"
+    },
+    {
+      name: "Conduzir pesquisas de UX e testar os primeiros conceitos",
+      certImg: "https://www.coursera.org/account/accomplishments/verify/YT2HA9ZM2V2S",
+      company: "Google",
+      companyLogo:
+        "https://www.freepnglogos.com/uploads/google-logo-png/google-logo-icon-png-transparent-background-osteopathy-16.png"
+    },
+    {
+      name: "Criar designs e protótipos de alta fidelidade no Figma",
+      certImg: "https://www.coursera.org/account/accomplishments/verify/VVN8KWCEEPH2",
+      company: "Google",
+      companyLogo:
+        "https://www.freepnglogos.com/uploads/google-logo-png/google-logo-icon-png-transparent-background-osteopathy-16.png"
     },
     ];
   
@@ -257,9 +276,11 @@ export const Skills = () => {
               technologies
             </p>
             <div className="tec-progress d-flex flex-column gap-3">
+              <Row lg={2} md={2} sm={1} xs={1}>
               {tecnologies.map((tecnologie) => (
                 <Col
                   className="d-flex align-items-center gap-4"
+                  style={{marginTop: "12px"}}
                   key={tecnologie.id}
                 >
                   <div>
@@ -290,47 +311,10 @@ export const Skills = () => {
                   </div>
                 </Col>
               ))}
+              </Row>
             </div>
           </div>
-          <div className="know-container d-flex flex-column">
-          <p
-                style={{
-                  color: "#e4aa48",
-                  textTransform: "uppercase",
-                  fontWeight: "bold",
-                  fontSize: "1rem",
-                }}
-              >
-                Knowledge
-              </p>
-            <div
-              className="d-flex flex-column gap-3"
-              style={{
-                background: "#32323a",
-                padding: "2.4rem",
-                borderRadius: "10px",
-              }}
-            >
-              
-              {knowledges.map((knowledge) => (
-                <Col>
-                  <div className="d-flex align-items-center gap-3">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="25"
-                      height="25"
-                      fill="#e4aa48"
-                      class="bi bi-check2"
-                      viewBox="0 0 16 16"
-                      >
-                      <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
-                    </svg>
-                    <p className="knowledge-title">{knowledge}</p>
-                  </div>
-                </Col>
-              ))}
-            </div>
-          </div>
+          
           <div className="cert-container">
             <p
               style={{

@@ -90,6 +90,16 @@ export const Tab = () => {
       demoUrl: "https://shopping-cart-two-ivory.vercel.app",
       tecsUsed: [images.typescript, images.react, images.bootstrap],
     },
+    {
+      name: "GViewer",
+      type: "cases",
+      description:
+        "A concept for a gaming application, build along with the UX Design course by Google. Consists only in a high fidelity prototype created on Figma. See more in the button below.",
+      cardImg: images.gviewer,
+      codeUrl: "https://docs.google.com/presentation/d/1iu2v6CZwjNMdda1Z55zbSYW40nbv51WXCnblSjQktic/edit?usp=sharing",
+      demoUrl: "https://www.figma.com/proto/ZxYOBMLd2AcA1z5ol0wMt9/game-visualization?type=design&node-id=156-1359&t=vFvGrP5FquXfarKP-0&scaling=scale-down&page-id=155%3A54&starting-point-node-id=156%3A1359",
+      tecsUsed: [images.figma],
+    },
   ]);
   const [filteredCards, setFilteredCards] = useState([]);
 
@@ -178,6 +188,14 @@ export const Tab = () => {
                 Applications
               </Nav.Link>
             </Nav.Item>
+            <Nav.Item>
+              <Nav.Link
+                eventKey="fifth"
+                onClick={() => filterCardsByType("cases")}
+              >
+                Cases
+              </Nav.Link>
+            </Nav.Item>
           </Nav>
         </Col>
         <Col sm={9}>
@@ -213,6 +231,16 @@ export const Tab = () => {
               />
             </TabBS.Pane>
             <TabBS.Pane eventKey="fourth">
+              <Card cards={currentCards} />
+              <Pagination
+                cardsPerPage={cardsPerPage}
+                currentPage={currentPage}
+                handlePageChange={handlePageChange}
+                indexOfLastCard={indexOfLastCard}
+                filteredCards={filteredCards}
+              />
+            </TabBS.Pane>
+            <TabBS.Pane eventKey="fifth">
               <Card cards={currentCards} />
               <Pagination
                 cardsPerPage={cardsPerPage}
