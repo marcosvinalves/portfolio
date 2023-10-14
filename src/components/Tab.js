@@ -92,7 +92,7 @@ export const Tab = () => {
     },
     {
       name: "GViewer",
-      type: "cases",
+      type: "case",
       description:
         "A concept for a gaming application, build along with the UX Design course by Google. Consists only in a high fidelity prototype created on Figma. See more in the button below.",
       cardImg: images.gviewer,
@@ -191,7 +191,7 @@ export const Tab = () => {
             <Nav.Item>
               <Nav.Link
                 eventKey="fifth"
-                onClick={() => filterCardsByType("cases")}
+                onClick={() => filterCardsByType("case")}
               >
                 Cases
               </Nav.Link>
