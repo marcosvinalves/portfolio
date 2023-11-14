@@ -8,6 +8,8 @@ const images = {
     reactPins: require("./reactpins.PNG"),
     shoppingCart: require("./shoppingcart.PNG"),
     gviewer: require("./gviewer.png"),
+    foodiedelight: require("./foodiedelight.png"),
+    mofit: require("./mofit.png"),
     html: require("./icons/html5-original.png"),
     css: require("./icons/css3-original.png"),
     react: require("./icons/react-original.png"),
