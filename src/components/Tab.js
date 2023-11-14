@@ -100,6 +100,26 @@ export const Tab = () => {
       demoUrl: "https://www.figma.com/proto/ZxYOBMLd2AcA1z5ol0wMt9/game-visualization?type=design&node-id=156-1359&t=vFvGrP5FquXfarKP-0&scaling=scale-down&page-id=155%3A54&starting-point-node-id=156%3A1359",
       tecsUsed: [images.figma],
     },
+    {
+      name: "Foodie Delight",
+      type: "case",
+      description:
+        "A concept for a cooking application, build along with the UX Design course by Google. Consists only in a high fidelity prototype created on Figma. See more in the button below.",
+      cardImg: images.gviewer,
+      codeUrl: "https://docs.google.com/presentation/d/1kdnnOWjFyGFh_RVKOTUWVqq_pHWtVuCyMpdaEpUYqqo/edit#slide=id.gd800de29cc_0_80",
+      demoUrl: "https://www.figma.com/proto/Jl0It1s7QC8v9LvktnDH6o/foodie-delight?type=design&node-id=30-7146&t=C7JMkZNYQMRNUvKN-0&scaling=min-zoom&page-id=28%3A2276&starting-point-node-id=30%3A7146",
+      tecsUsed: [images.figma],
+    },
+    {
+      name: "MoFit",
+      type: "case",
+      description:
+        "A concept for a fitness application, build along with the UX Design course by Google. Consists only in a high fidelity prototype created on Figma. See more in the button below.",
+      cardImg: images.gviewer,
+      codeUrl: "https://docs.google.com/presentation/d/1Kl3n-2jHgLIlqtV3JdmX75SeIktVj38Xps1j5iKXSag/edit#slide=id.p",
+      demoUrl: "https://www.figma.com/proto/ropM0AV9GgS081cyiXl8AG/fitness-app?type=design&node-id=31-69&t=C7JMkZNYQMRNUvKN-0&scaling=scale-down&page-id=31%3A58",
+      tecsUsed: [images.figma],
+    },
   ]);
   const [filteredCards, setFilteredCards] = useState([]);
 
